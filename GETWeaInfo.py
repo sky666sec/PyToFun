@@ -1,3 +1,10 @@
+'''
+定时用微信发送天气的信息（因为我没有两个微信，我就发送到公众号了）
+爬虫:用的requests+bs4+re基础方法
+爬取的天气网站是http://www.weather.com.cn/weather/101190201.shtml
+wechat:使用的wxpy库
+定时就自己简单的搞了一下
+'''
 import requests
 import re
 from bs4 import BeautifulSoup
