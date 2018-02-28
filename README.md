@@ -11,7 +11,7 @@
   helper=MysqlHelper('localhost',3306, 'students', 'root','123456')
   # 多查询
   sql='select name,gender from students order by id desc'
-  result=helper.get_all(sql)
+  result=helper.get_all(sql, [])
   print(result)
   # 操作数据
   sql2 = "update students set name=%s where id=%s"
