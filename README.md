@@ -2,8 +2,8 @@
 
 ^-^
 
-* [MysqlHelper.py](https://https://github.com/hyhmnn/InterestingScript/edit/master/MysqlHelper.py)
-```
+* [MysqlHelper.py](https://github.com/hyhmnn/InterestingScript/blob/master/MysqlHelper.py)
+```python3
 #0x01:MysqlHelper.py
 #用法:
 
@@ -19,8 +19,8 @@
   conn = helper.update(sql2,params)
   print(conn)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-```
-* [option_parser_test.py](https://https://github.com/hyhmnn/InterestingScript/edit/master/option_parser_test.py) 
+```python3
+* [option_parser_test.py](https://github.com/hyhmnn/InterestingScript/blob/master/option_parser_test.py) 
 ```
 # 0x02:option_parser_test.py
 # 简单使用optparse模块
