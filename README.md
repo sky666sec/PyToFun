@@ -1,6 +1,6 @@
-无聊就写写小脚本提高兴趣，继续学习python
+`无聊就写写小脚本提高兴趣，继续学习python`
 
-^-^
+`^-^`
 
 * [MysqlHelper.py](https://github.com/hyhmnn/InterestingScript/blob/master/MysqlHelper.py)
 ```python3
