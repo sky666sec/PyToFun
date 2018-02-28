@@ -19,9 +19,9 @@
   conn = helper.update(sql2,params)
   print(conn)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-```python3
-* [option_parser_test.py](https://github.com/hyhmnn/InterestingScript/blob/master/option_parser_test.py) 
 ```
+* [option_parser_test.py](https://github.com/hyhmnn/InterestingScript/blob/master/option_parser_test.py) 
+```python3
 # 0x02:option_parser_test.py
 # 简单使用optparse模块
 # +++++++++++++++++++++++++++++++++++====================+++++++++++++++++++++=================
