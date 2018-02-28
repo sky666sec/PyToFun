@@ -1,6 +1,8 @@
 无聊就写写小脚本提高兴趣，继续学习python
 
 ^-^
+
+* [MysqlHelper.py](https://https://github.com/hyhmnn/InterestingScript/edit/master/MysqlHelper.py)
 ```
 #0x01:MysqlHelper.py
 #用法:
@@ -17,4 +19,10 @@
   conn = helper.update(sql2,params)
   print(conn)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
+* [option_parser_test.py](https://https://github.com/hyhmnn/InterestingScript/edit/master/option_parser_test.py) 
+```
+# 0x02:option_parser_test.py
+# 简单使用optparse模块
+# +++++++++++++++++++++++++++++++++++====================+++++++++++++++++++++=================
 ```
