@@ -1,6 +1,6 @@
 # encoding=utf8
 import pymysql
-#pip3 install pymysql
+
 
 class MysqlHelper():
     def __init__(self, host, port, db, user, passwd, charset="utf8"):
@@ -20,22 +20,22 @@ class MysqlHelper():
         self.cursor.close()
         self.conn.close()
 
-    def get_one(self, sql):
-        result = ''
+    def get_one(self, sql, params):
+        result = None
         try:
             self.connect()
-            self.cursor.execute(sql)
+            self.cursor.execute(sql, params)
             result = self.cursor.fetchone()
             self.close()
         except Exception as e:
             print(e)
         return result
 
-    def get_all(self, sql):
-        result = ''
+    def get_all(self, sql, params):
+        result = ()
         try:
             self.connect()
-            self.cursor.execute(sql)
+            self.cursor.execute(sql, params)
             result = self.cursor.fetchall()
             self.close()
             return result
