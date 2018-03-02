@@ -26,3 +26,13 @@
 # 简单使用optparse模块
 # +++++++++++++++++++++++++++++++++++====================+++++++++++++++++++++=================
 ```
+[OpenXlsx.py](https://github.com/hyhmnn/InterestingScript/blob/master/OpenXlsx.py)
+```python3
+# 0x03:OpenXlsx.py
+# 用法：
+  member_infos = OpenXlsx("test.xlsx", "Sheet1")
+  num = member_infos.lines()
+  for n in range(num):
+    context_list = member_infos.Acolumn(n)
+    print(context_list)
+```
