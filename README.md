@@ -2,7 +2,7 @@
 
 `^-^`
 
-* [MysqlHelper.py](https://github.com/hyhmnn/InterestingScript/blob/master/MysqlSqlServeHelper.py)
+* [MysqlSqlServeHelper.py](https://github.com/hyhmnn/InterestingScript/blob/master/MysqlSqlServeHelper.py)
 ```python3
 #0x01:MysqlHelper.py
 #用法:
