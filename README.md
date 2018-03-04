@@ -2,12 +2,12 @@
 
 `^-^`
 
-* [MysqlHelper.py](https://github.com/hyhmnn/InterestingScript/blob/master/MysqlHelper.py)
+* [MysqlHelper.py](https://github.com/hyhmnn/InterestingScript/blob/master/MysqlSqlServeHelper.py)
 ```python3
 #0x01:MysqlHelper.py
 #用法:
 
-  from MysqlHelper import *
+  from MysqlSqlServeHelper import MysqlHelper, SqlSerHelper
   helper=MysqlHelper('localhost',3306, 'students', 'root','123456')
   # 多查询
   sql='select name,gender from students order by id desc'
@@ -18,6 +18,9 @@
   params = ["yes",1]
   conn = helper.update(sql2,params)
   print(conn)
+  #-------------------------------
+  SqlSerHelper 注意的是:
+  params = (strings,)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ```
 * [option_parser_test.py](https://github.com/hyhmnn/InterestingScript/blob/master/option_parser_test.py) 
