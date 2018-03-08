@@ -39,3 +39,5 @@
     context_list = member_infos.Acolumn(n)
     print(context_list)
 ```
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[生成验证码](https://github.com/hyhmnn/PythonScripts/blob/master/VerCode.py)
