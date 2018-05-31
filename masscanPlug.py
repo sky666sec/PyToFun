@@ -30,12 +30,13 @@ def main(hosts, ports, arguments=''):
 		result = mas.scan(hosts, ports=ports, arguments=arguments)
 	except Exception, e:
 		if "network is unreachable" in e:
-			return json.dumps({'eroor':'network is unreachable'})
+			return json.dumps({'error':'network is unreachable'})
 		else:
-			return json.dumps({'eroor':e})
+			return json.dumps({'error':str(e)})
 	return json.dumps({'result':result['scan']}, separators=(',', ':'))
 
 if __name__ == '__main__':
 	arguments='--max-rate 100000'
-	result = main("192.168.1.0/24", ports="0-65535", arguments=arguments)
+	result = main("192.168.1.0-192.168.1.31", ports="0-65535", arguments=arguments)
+	# result = main("192.168.1.0-192.168.1.31", ports="0-65535")
 	print result
