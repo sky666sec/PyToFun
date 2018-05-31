@@ -30,6 +30,7 @@ def main(hosts, ports, arguments=''):
 		result = mas.scan(hosts, ports=ports, arguments=arguments)
 	except Exception, e:
 		if "network is unreachable" in e:
+			# "found=0"
 			return json.dumps({'error':'network is unreachable'})
 		else:
 			return json.dumps({'error':str(e)})
