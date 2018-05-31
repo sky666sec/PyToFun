@@ -38,5 +38,32 @@ def main(hosts, ports, arguments=''):
 if __name__ == '__main__':
 	arguments='--max-rate 100000'
 	result = main("192.168.1.0-192.168.1.31", ports="0-65535", arguments=arguments)
-	# result = main("192.168.1.0-192.168.1.31", ports="0-65535")
 	print result
+	'''{
+    "result": {
+        "192.168.1.3": {
+            "tcp": {
+                "8080": {
+                    "services": [
+                        
+                    ],
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "reason_ttl": "64"
+                }
+            }
+        },
+        "192.168.1.1": {
+            "tcp": {
+                "8080": {
+                    "services": [
+                        
+                    ],
+                    "state": "open",
+                    "reason": "syn-ack",
+                    "reason_ttl": "64"
+                }
+            }
+        }
+    }
+}'''
