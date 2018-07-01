@@ -1,0 +1,16 @@
+sudo apt-get update && sudo apt-get upgrade
+
+git clone https://github.com/lyfeyaj/sublime-text-imfix.git
+
+cd sublime-text-imfix
+
+./sublime-imfix
+
+
+-------------------汉化插件------------------------------------------------------------------------
+ChineseLocalzations
+-------------------------------html开发插件------------------------------------
+#标签快捷键
+Emmet 
+左侧文件栏,右键文件在浏览器打开
+SideBarEnhancements

@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+# coding:utf-8
+# auther:hyhmnn
 '''
 根据廖旭峰的图片验证码，
 变成了一个算术验证码

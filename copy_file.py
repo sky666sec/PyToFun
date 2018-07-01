@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+# coding:utf-8
+
 import os
 from multiprocessing import Pool,Manager
 import time
@@ -36,7 +39,7 @@ class CopyFile(object):
 		
 		# pool.close()
 		# pool.join()
-   # 显示进度-------------------------------
+		# 显示进度-------------------------------
 		allNum = len(self.files)
 		num = 0
 		while num < allNum:
@@ -46,9 +49,9 @@ class CopyFile(object):
 			num += 1
 			copyRate = (num/allNum)*100
 			print("\rcopy[%.2f%%]"%copyRate,end="")
-      
+
 			print("copy complete..")
-   # 显示进度-------------------------------
+		# 显示进度-------------------------------
 def main():
 	fname = input("folder name:")
 	copy_test = CopyFile(fname)

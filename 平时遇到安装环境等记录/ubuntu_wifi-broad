@@ -1,0 +1,6 @@
+sudo apt-get update
+sudo apt-get install --reinstall bcmwl-kernel-source
+
+出现依赖包就执行
+
+ sudo apt-get -f install

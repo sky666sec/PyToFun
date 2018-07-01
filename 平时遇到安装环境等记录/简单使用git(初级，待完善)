@@ -1,0 +1,77 @@
+1、没有github账号：
+  https://github.com
+  注册一个
+2、登陆后
+  new	repository
+    新建项目名：“test”
+      create repository
+        创建完成之后
+        出现了这些东西：
+          Quick setup — if you’ve done this kind of thing before等等
+          你拷贝这个段:
+          
+          echo "# test" >> README.md
+          git init
+          git add README.md
+          git commit -m "first commit"
+          git remote add origin https://github.com/YOUNAME/test.git
+          git push -u origin master
+          
+#***先用https方式连接
+
+3、安装Github shell程序，
+    地址：http://windows.github.com/
+  安装完成后，还需要最后一部设置
+   git config --global user.name "your name" #名字
+   git config --global user.email "username@hostname.com" #邮箱
+  mkdir project_name #创建一个项目目录（你可以理解为是github的test）
+  cd project_name #进入那个目录
+  把copy的东西复制下来运行：（一般会有些错误）
+        如果执行 git remote add origin https://github.com/YOUNAME/test.git时
+        出现错误：
+          fatal: remote origin already exists
+        则执行以下语句：
+          git remote rm origin
+        如果执行git push -u origin master时，
+        出现错误：
+          error:failed to push som refs to.......
+        则执行以下语句：
+          git pull -u origin master
+  git push -u origin master之后依次输入用户名、密码
+
+4、日后仍需要更新
+  git add YourUpfiles
+  git commit -m "add YourUpfiles"
+  #只有执行git commit之后才会把YourUpfiles文件添加到你的仓库里
+  git push(git push -u origin master)好像如果添加新文件就是使用（）里的，更新就用（）外的。
+  #更新到github仓库里
+#==============================================================================================
+
+可能经常需要从 GitHub 上下载修正和改进后的源码用于更新本地仓库。完成这个操作
+的命令如下所示：
+  $ git fetch --all
+  $ git fetch --tags
+  $ git reset --hard origin/master
+git fetch 命令用于利用 GitHub 上的远程仓库更新本地仓库的提交历史和标签，但不会改
+动真正的源文件，随后执行的 git reset 命令才是用于更新文件的操作。
+
+可以查看 2a 和 2b 两个修订版本之
+间的区别：
+  $ git diff 2a 2b
+在 GitHub 中查看 2a 和 2b 两个历史版本的区别，可以访问 https://github.com/
+miguelgrinberg/flasky/compare/2a...2b
+#==============================================================================================
+常用的命令
+  ● git config：配置相关信息
+  ● git clone：复制仓库
+  ● git init：初始化仓库
+  ● git add：添加更新内容到索引中
+  ● git diff：比较内容
+  ● git status：获取当前项目状况
+  ● git commit：提交
+  ● git branch：分支相关
+  ● git checkout：切换提交历史
+  ● git merge：合并分支
+  ● git reset：恢复版本
+  ● git log：查看日志
+  

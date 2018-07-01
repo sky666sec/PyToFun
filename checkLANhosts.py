@@ -1,3 +1,7 @@
+#! /usr/bin/python3
+# coding:utf-8
+# auther:hyhmnn
+# date:2017-12-30
 '''
 can run in win/linux
 
@@ -6,9 +10,6 @@ can run in win/linux
 直接运行
 输入局域网网关
 使用的多进程，进程池为30
-
-auther:hyhmnn
-date:2017-12-30
 '''
 import os
 import platform

@@ -1,0 +1,23 @@
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt install unity-tweak-tool
+
+sudo add-apt-repository ppa:noobslab/themes
+sudo apt-get update
+sudo apt-get install flatabulous-theme
+sudo add-apt-repository ppa:noobslab/icons
+sudo apt-get update
+sudo apt-get install ultra-flat-icons
+--------------------------------------------------
+sudo add-apt-repository ppa:viktor-krivak/pycharm
+
+sudo apt update
+
+sudo apt install pycharm
+
+卸载PyCharm：
+sudo apt remove --autoremove pycharm pycharm-professional
+-----------------------------------------------------------
+krita
+ubuntu 上面代替win下的photoshop

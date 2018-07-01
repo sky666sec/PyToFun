@@ -1,4 +1,6 @@
-# -*- coding:utf-8 -*- 
+#! /usr/bin/python3
+# coding:utf-8
+# auther:hyhmnn
 '''
 监控linux本地磁盘，通过邮箱告知
 运行环境 centos 6 	python3.6.0 && python 2.7

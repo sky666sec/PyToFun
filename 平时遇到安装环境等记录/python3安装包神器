@@ -1,0 +1,35 @@
+Anaconda 是一个用于科学计算的 Python 发行版，支持 Linux, Mac, Windows, 包含了众多流行的科学计算、数据分析的 python 包。
+
+Anaconda 安装包可以到 https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/ 下载.
+
+下载完，一路next，等会儿-这里必须说一下：
+
+如果不把这个加入环境变量，后续有一些小麻烦，最好加入环境变量。
+
+#####这里摘自-清华大学开源镜像站（https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/）
+
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+
+conda config --set show_channel_urls yes
+在cmd下执行，更换国内源
+
+###########################################################################
+
+还有用conda 和 pip 安装都失败了，
+
+用wheel安装(https://pypi.python.org/pypi/Pygame)
+
+需要看一看pip支持什么版本的，(.whl is not supported wheel on this platform)(一般版本的错误提示)
+
+import pip; 
+
+print(pip.pep425tags.get_supported())
+
+
+
+（tips）之后sublime3- RERL 插件就可以直接使用，一些比较难装的库也可使用了。
+=-=-=-=-=-=-=python3.6.1 安装scrpy-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+pip install scrapy==1.1.0rc3
+##################看模块的版本#####################
+import django
+django.__version__
